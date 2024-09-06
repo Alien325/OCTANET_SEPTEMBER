@@ -1,0 +1,93 @@
+body {
+    background-image: url('r1.jpg');
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    animation: body 10s ease-in-out;
+}
+
+@keyframes body {
+    25% {
+        background-image: url('r1.jpg');
+    }
+    25.1% {
+        background-image: url('r2.jpg');
+    }
+    50% {
+        background-image: url('r3.jpg');
+    }
+    25% {
+        background-image: url('r4.jpg');
+    }
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.container {
+    background-color: #f1ecec6b;
+    padding: 2em;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(245, 243, 243, 0.1);
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#flights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.flight {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+.flight h2 {
+    margin-top: 0;
+}
